@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+        font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #91ce7af1;
+        overflow-x: hidden;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }
+
+        .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        color: #000000;
+        display: block;
+        }
+
+        .sidenav a:hover {
+        color: #f1f1f1;
+        }
+
+        .main {
+        margin-left: 250px; 
+        font-size: 15px; 
+        padding: 25px 100px 450px 15px ;
+        text-align: justify;
+        }
+
+        @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+        .column {
+        float: left;
+        width: 48%;
+        padding: 3px;
+        }
+
+        .column_2 {
+        float: left;
+        width: 32%;
+        padding: 3px;
+        }
+
+        /* Clear floats after image containers */
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        .block {
+        display: block;
+        width: 95%;
+        border: none;
+        color: black;
+        background-color: #ebeeec;
+        margin: 5px;
+        margin-right: 15px;
+        padding: 5px 2px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: left;
+        transition: transform 0.3s; /* Transição suave ao dar zoom */
+        }
+
+        .block:hover {
+            transform: scale(1.1); /* Zoom ao passar o mouse */
+        }
+
+        .circle {
+        background-color: #aaa;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin-left: 80px;
+        overflow: hidden;
+        position: relative;
+        }
+
+        .circle img {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        }
+
+        .container {
+        display: flex;
+        align-items: center;
+        }
+
+        .logo {
+        font-size: 20px;
+        color: #fafbfc;
+        margin-left: 2px;
+        }
+
+        .name {
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidenav">
+    <div class="circle">
+        <img src="https://avatars.githubusercontent.com/u/100801617?s=400&u=fc908334e7216735755a93219dd9ed856223b43b&v=4">
+    </div>
+    
+    <div class="container">
+        <div class="name">Rafael Soares da Silva</div>
+        <a href="https://www.linkedin.com/in/83rafasoares/"><i class="fa fa-linkedin logo"></i></a>
+      </div>
+    <hr>
+
+    <button type="button" class="block"><a href="#contexto">Contexto</a></button>
+    <button type="button" class="block"><a href="#swot">Análise SWOT</a></button>
+    <button type="button" class="block"><a href="#metodologia">Metodoligia (CRISP-DM)</a></button>        
+    <button type="button" class="block"><a href="#entendimento">Entendimento do Negócio</a></button>
+    <button type="button" class="block"><a href="#dados">Preparação dos Dados</a></button>
+    <button type="button" class="block"><a href="#analise">Análise</a></button>
+    <button type="button" class="block"><a href="#validacao">Validação</a></button>
+    <button type="button" class="block"><a href="#implementacao">Implementação</a></button>  
+    <button type="button" class="block"><a href="#dashboard">Dashboard</a></button>        
+    <button type="button" class="block"><a href="#conclusao">Conclusão</a></button>
+    <button type="button" class="block"><a href="#proximospassos">Próximos Passos</a></button>
+    <button type="button" class="block"><a href="#anexos">Anexos</a></button>
+    <button type="button" class="block"><a href="#referencias">Referências</a></button>
+    </ul>
+    <hr>
+    <br>
+</div>
+
+<div class="main" >
+    <div id="contexto">
+        <h1><i>Health Insurance<small> (People Analytics)</i></small></h1>
+        <div>
+            <figure>
+                <img src="imagens\banner_health_insurance.jpg" alt="Banner turnover" width="100%">
+            </figure>
+        </div>
+        <br>
+        <h3>Contexto</h3>
+        <p>Despesas com a saúde dos colaboradores são uma questão importante para qualquer empresa. Esses custos podem ser significativos e, se não forem bem gerenciados, podem afetar a lucratividade da empresa.</p>
+        <p>Esses gastos podem incluir uma variedade de custos, como seguro saúde, licenças médicas, custos de substituição de funcionários doentes e perda de produtividade devido a doenças. Além disso, os custos de saúde estão aumentando globalmente, o que pode aumentar ainda mais esses gastos para as empresas.</p>
+        <p>Mitigar esses gastos é crucial por várias razões:</p>
+        <ul>
+            <li>Primeiro, reduzir os custos de saúde pode melhorar diretamente a lucratividade da empresa. Segundo, pode liberar recursos que podem ser reinvestidos em outras áreas da empresa, como desenvolvimento de produtos, marketing ou expansão dos negócios.</li>
+            <li>Além disso, um programa de saúde eficaz para os colaboradores pode levar a uma força de trabalho mais saudável e mais produtiva. Os funcionários saudáveis são geralmente mais produtivos, têm menos dias de doença e são mais capazes de contribuir para o sucesso da empresa a longo prazo.</li>
+        </ul>
+        <p>Em suma, embora os gastos com a saúde dos colaboradores sejam um desafio para as empresas, é importante que as empresas reconheçam a importância de gerenciar e mitigar esses custos. Investir em programas de saúde eficazes para os colaboradores não é apenas uma decisão financeiramente sábia, mas também pode levar a uma força de trabalho mais saudável, mais feliz e mais produtiva. Isso, por sua vez, pode contribuir para o sucesso e a sustentabilidade da empresa a longo prazo.</p>
+    </div>
+    <hr>
+    <div id="swot">
+        <h3>Analise SWOT</h3>
+        <p>Todo momento em que uma empresa enfrenta um novo desafio, principalmente não ligado a sua àrea de atuação, é necessário que se dê um passo atrás para obter uma visõ mais ampla do problema. A análise SWOT vai ajudar nesse contexto. Podemos enxergar qual o caminho de menor resistência, evitar disperdício de tempo e dinheiro focando exatamento naquilo que trará resultados práticos.</p>
+        <p>A análise SWOT é também um diagnóstico, um <i>screenshot</i> do momento atual da empresa. É sempre muito vantajoso, sempre que possível ter essa visão. Ela pode ser usada como <i>Checkpoints</i> no caminho do objetivo buscado.</p>
+        <div align="center">
+            <figure>
+                <a href="imagens\analise_swot.png">
+                    <img src="imagens\analise_swot.png" alt="análise swot do momento da empresa antes da análise" width="70%">
+                </a>
+            </figure>
+        </div>
+    </div>
+    <hr>
+    <div id="metodologia">
+        <h3>Metodologia</h3>
+        <figure>
+            <img src="imagens\crisp_dm.png" alt="banner da metodologia crisp-dm" width="100%">
+        </figure>
+        <p>Para desenvolver esse projeto a metodologia <strong>CRISP-DM</strong> (Cross Industry Standard Process for Data Mining) será a base para que o projeto tenha um norte de cada etapa a ser percorrida. 
+            É um modelo de processo de mineração de dados que descreve abordagens comumente usadas por especialistas em mineração de dados para atacar problemas.</p>
+        <div id="entendimento">
+          <h3>1. Entendimento do Negócio</h3>
+          <ul>
+                <li>O objetivo do projeto é:
+                    <ul>
+                        <li>Descobrir quais os fatores estão mais relacionados com o aumento das despesas com plano de saúde.</li>
+                        <li>Que tipo de ações preventivas a empresa porde realizar para evitar que essa despesa atinja valores inviáveis, que venham a prejudicar seu lucro.</li>
+                        <li>Mensurar um tempo viáve para a implantação das ações necessárias.</li>
+                        <li>Desenvolver um dashboard com KPIs para o acompanhamento dos resultados.</li>
+                    </ul> 
+                </li>
+              <li>Estudo realizado com amostras aleatórias.</li>
+              <li>A amostra compreende o perído de 1 ano. </li>
+              <li>A amostra possui uma quantidade razoável de participantes (colaboradores da empresa selecionados aleatória mente por todo território nacional - área de atuação da empresa), porém as variáveis são limitadas.</li>
+              <li>A amostra da população de dados da empresa, foi coletada pelo Departamento Médico através de querie SQL e convertida para um arquivo</li>
+              <li>Dado que a amostra reflete uma percentual pequeno da população, essa pode não representar fielmente toda a base de dados da empresa.</li>
+              <li>Empresas enfrentam vários desafios ao tentar reduzir gastos com planos de saúde, alguns dos principais são:
+                    <ol>
+                        <li><strong>Aumento dos custos dos serviços:</strong> Este é um dos maiores problemas encontrados nas empresas e está presente em diferentes setores.</li>
+                        <li><strong>Uso inadequado do benefício:</strong> Este problema se agrava com o uso inadequado do benefício por parte do funcionário, que por vezes não sabe ao certo a qual especialista recorrer e acaba aumentando os gastos em consultas.</li>
+                        <li><strong>Hábitos prejudiciais à saúde no ambiente de trabalho:</strong> Estes podem ocasionar doenças ortopédicas, resultando em um aumento nas consultas e indicações de cirurgias, por vezes desnecessárias, que poderiam ser evitadas com uma rotina mais saudável.</li>
+                    </ol>
+              </li>
+              <li>Esse não é um problema isolado da empresa. Pode-se dizer que é praticamente um problema mundial, já que ano após ano os índices dos mais variados fatores relacionados à saúde só pioram, como IMC, Saúde Mental, Tabagismo etc. É preciso aprender com quem já lidou com o problema e conseguiu superá-lo.</li>
+              <li>A princípio, após encotrada a variável, ou variáveis que estão causando o aumento na despesa, o cliente acredita que uma redução de <strong>10%</strong>, dentro dos próximos <strong>12 meses</strong>, será considerada uma ação bem sucedida. Pois assim poderá concentrar mais esforços, após a constatação do resultado obtido, para ampliar a margem. Assim concluirá o projeto.</li>
+          </ul>
+        </div>
+        <hr>
+        <div id="dados">
+            <h3>2. Preparação dos Dados</h3>
+            <p>Essa base, fornecida pelo Departamento Médico da empresa, possui todo o tratamento necessário já realizado. Portanto toda limpeza, formatação e tratamento de dados faltantes é dispenvável.</p>
+            <p>A amostra possui 6 variáveis explicativas (Idade, Sexo, IMC, Quantidade de filhos, Fumante e Região do Brasil) para que se compreenda a variável saída <strong>Custo_Saúde</strong>.</p>            
+            <div align="center">
+                <figure>
+                    <img src="imagens/base_de_dados.png" alt="Tabela de dados" width="80%">
+                    <figcaption><small>Tabela com amostra dos dados.</small></figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <h3>Metadados</h3>
+                    <p>Para entendimento objetivo do que cada variável represeta no escopo da análise, segue metadados:</p>
+                    <img src="imagens/metadados.png" alt="Tabela Explicativa de cada variável" width="80%">
+                    <figcaption><small>Metadados de todos o itens analisados.</small></figcaption>
+                </figure>
+            </div>
+            <ul>
+                <li>
+                    <p><strong><i>Feature Engineering</i></strong></p>
+                    <p>Para ampliar a compreenção gráfica de algumas vaviáveis, outras foram geradas a partir destas para que a visão mais concreta pudesse ser alcançada. Assim à tabela de dados foram adicionadas novas colunas:</p>
+                    <ul>
+                        <li>A coluna qualitativa ordinal <strong>Faixas_de_IMC</strong> foi gerada a partir do benchmark de IMC.</li>
+                        <li>As colunas qualitativas nominais <strong>Obesidade</strong> (que separa colaboradores com algum grau de obesidade dos que não possuem qualquer grau), e a coluna <strong>Filhos</strong>, para dividir o grupo entre os que possuem dependentes dos que não possuem.</li>
+                    </ul>
+                    <div align="center">
+                        <figure>
+                            <a href="imagens\base_de_dados_feature_engineering.png" alt="base de dados com as colunas faixas de imc, obesidade e filhos adicionadas" width="100%">
+                                <img src="imagens\base_de_dados_feature_engineering.png" alt="base de dados com as colunas faixas de imc, obesidade e filhos adicionadas" width="80%">
+                            </a>
+                            <figcaption><small>Base com as colunas citadas a cima adicionadas.</small></figcaption>
+                        </figure>
+                        <br>
+                        <figure>
+                            <img src="imagens\benchmark_IMC.png" alt="faixas de imc" width="40%">
+                            <figcaption><small><i>Benchmark</i> das faixas de IMC.</small></figcaption>
+                        </figure>
+                    </div>
+                </li>
+            </ul>
+
+            <ul>
+                <li><strong>AED - Análise Exploratória dos Dados</strong></li>
+                <p>Foi realizada uma análise unidimensional em todas as variáveis para compreender melhor o cenário foco do estudo e, se necessário, lidar da melhor maneira com possíveis <i>outliers</i>, além de solidificar a base para a etapa seguinte.</p>
+                <h4>Gráficos da análise exploratória</h4>
+                <div class="row">
+                    <div class="column">
+                        <a target="_blank" href="imagens\histograma_idade.png">
+                            <img src="imagens\histograma_idade.png" alt="Histograma da idade dos colaboradores" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a target="_blank" href="imagens\histograma_imc.png" alt="Histograma do IMC dos colaboradores">
+                            <img src="imagens\histograma_imc.png" alt="Histograma do IMC dos colaboradores" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a target="_blank" href="imagens\pareto_imc.png" alt="Gráfico de Pareto do IMC">
+                            <img src="imagens\pareto_imc.png" alt="Gráfico de Pareto do IMC" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a target="_blank" href="imagens\pareto_qde_filhos.png" alt="Gráfico de Pareto da Quantidade de filhos.">
+                            <img src="imagens\pareto_qde_filhos.png" alt="Gráfico de Pareto da quantidade de filhos." style="width:100%">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <a target="_blank" href="imagens\boxplot_idade.png" alt="Gráfico de boxplot da idade dos colaboradores.">
+                            <img src="imagens\boxplot_idade.png" alt="Gráfico de boxplot da idade dos colaboradores." style="width:100%">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a target="_blank" href="imagens\boxplot_imc.png" alt="Gráfico de boxplot do imc dos colaboradores.">
+                            <img src="imagens\boxplot_imc.png" alt="Gráfico de boxplot do imc dos colaboradores." style="width:100%" height=338>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column_2">
+                        <a target="_blank" href="imagens\pizza_genero.png" alt="Gráfico de pizza de gênero">
+                            <img src="imagens\pizza_genero.png" alt="Gráfico de pizza de gênero" style="width:100%" height=230>
+                        </a>
+                    </div>
+                    <div class="column_2">
+                        <a target="_blank" href="imagens/pizza_obesidade.png" alt="Gráfico de pizza de obesidade">
+                            <img src="imagens\pizza_obesidade.png" alt="Gráfico de pizza de obesidade" style="width:100%" height=230>
+                        </a>
+                    </div>
+                    <div class="column_2">
+                        <a target="_blank" href="imagens/pizza_fumantes.png" alt="Gráfico de pizza: fumantes">
+                            <img src="imagens\pizza_fumantes.png" alt="Gráfico de pizza: fumantes" style="width:100%" height=230>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a target="_blank" href="imagens/barras_distribuicao_geografica.png" alt="Gráfico de barras horizontais das regições do Brasil">
+                            <img src="imagens\barras_distribuicao_geografica.png" alt="Gráfico de barras horizontais das regições do Brasil" width=400 height=250>
+                        </a>
+                    </div>
+                </div> 
+                <p>Na amostra, as idades estão distribuidas de forma uniforme. Não temos <i>outliers</i> de idade observados, o que pode ser positivo pela igualdade de representação. Por outro lado, a distribuição uniforme não fornece muita informação sobre tendências, relações de dados e não capta a variabilidade dos dados.</p>
+                <p>A média de idade da amostra é de 39 anos. O gráfico de boxplot mostra que 25% dos funcionários tem até 27 anos de idade, sendo a maior concentração entre 18 e 22 (222 funcionários). 50% da base possui idade entre 27 e 51 anos.</p>
+                <p></p>
+                <p>O histograma de IMC possui uma distribuição aproximadamente normal, o que permite uma interpretação intuitiva, além de ser amplamente aplicavel. Ainda assim será necessário atenção aos <i>outliers</i>, pois um único valor extremo pode distorcer a média e o desvio padrão, e à conclusões precipitadas.</p>
+                <p>A média está em 31, contendo 172 colaboradores. Uma visão a partir do boxplot mostra <strong>poucos <i>outliers</i> </strong>. Uma base de amostra com poucos <i>outliers</i> pode ter várias implicações positivas e alguns fatores que precisam de atenção.</p>
+                <p>Positivamente, podemos dizer que:</p>
+                <ul>
+                    <li><strong>Consistência dos dados:</strong></li> A presença de poucos <i>outliers</i> sugere que a maioria dos dados é consistente e segue uma tendência ou padrão específico.</li>
+                    <li><strong>Modelagem mais precisa:</strong> Modelos estatísticos ou de aprendizado de máquina treinados nesses dados podem ter melhor desempenho, pois os <i>outliers</i> podem às vezes levar a um ajuste excessivo <i>(overfitting)</i>.</li>
+                    <li><strong>Interpretação mais fácil:</strong> Os resultados das análises são mais fáceis de interpretar, pois os <i>outliers</i> podem distorcer a representação dos dados.</li>
+                </ul>
+                <p>No entanto, alguns fatores que precisam de atenção, por exemplo, a <strong>verificação de viés:</strong> Uma quantidade muito pequena de <i>outliers</i> pode indicar que os dados foram excessivamente limpos ou que o processo de coleta de dados é enviesado.</p>
+                <p>Pode-se observar a distribuição equilibrada da amostra no gráfico de pizza, onde 51% dos colaboradores são do sexo masculino e 49% do sexo feminino.</p>
+                <p>67% dos colaboradores possuem até 2 filhos sendo que dentro desse percentual 43% não possuem filhos.</p>
+                <p>20% dos colaboradores são fumantes.</p>
+                <p>A distriguição geográfica da amostra também apresenta equilíbrio muito bom. O fato da região sudeste possuir um pouco mais de colaboradores pode ser pelo fato dessa ser a região mais populosa do país, entre outros fatores: econômicos, por exemplo.</p>
+                <br>
+                <hr>
+                <div id="analise">
+                    <h3>3. Modelagem / Análise</h3>
+                    <p>Para entender a relação entre as variáveis da base serão utilizadas as tecnicas de <strong>Análise de Correlação</strong> e <strong>Regressão Linear Múltipla</strong>.</p>
+                    <p>Posteriormente será desenvolvido um dashboard com os indicadores fundamentais para o acompanhamento dos resultados das ações realizadas.</p>
+        
+                    <div class="row">
+                        <p><strong>Análise de Correlação</strong> (Variáveis Quantitatívas)</p>
+                        <p>A análise de correlação é usada para medir o grau de associação entre variáveis quantitativas. Ela procura entender como uma variável se comporta em um cenário onde outra está variando, visando identificar se existe alguma relação entre a variabilidade de ambas.</p>
+                        <p>Na matriz abaixo pode-se notar como as variáveis explicativas se relacionam com a variável resposta (Custo_Saúde), a <i>Correlação de Pearson</i>.</p>
+                        
+                        <div align="center">
+                            <a target="_blank" href="imagens/tabela_relacao_var_quanti.png" alt="Matriz de correlação entre variáveis exlicatívas">
+                                <img src="imagens/tabela_relacao_var_quanti.png" alt="Matriz de correlação entre variáveis exlicatívas" width="50%">
+                            </a>
+                            <figcaption><small>Apesar de parecer uma relação fraca, podemos dizer que idade se relaciona sim com Custo Saúde.</small></figcaption>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="column_2">
+                            <a target="_blank" href="imagens\relacao_idade_saude.png" alt="Gráfico de dispersão entre idade e custo com saúde.">
+                                <img src="imagens\relacao_idade_saude.png" alt="Gráfico de dispersão entre idade e custo com saúde." style="width:100%" >
+                            </a>
+                        </div>
+                        <div class="column_2">
+                            <a target="_blank" href="imagens\relacao_imc_saude.png" alt="Gráfico de dispersão entre imc e custo com saúde.">
+                                <img src="imagens\relacao_imc_saude.png" alt="Gráfico de dispersão entre imc e custo com saúde." style="width:100%" >
+                            </a>
+                        </div>
+                        <div class="column_2">
+                            <a target="_blank" href="imagens\relacao_filhos_saude.png" alt="Gráfico de dispersão entre quantidade de filhos e custo com saúde.">
+                                <img src="imagens\relacao_filhos_saude.png" alt="Gráfico de dispersão entre quantidade de filhos e custo com saúde." style="width:100%"  >
+                            </a>
+                        </div>
+                    </div>
+                
+                    <p>Pode-se observar graficamente que apesar de não ser uma relação forte, há uma relação positiva entre idade x custo de saúde e IMC x custo de saúde, ou seja, à medida que a idade ou IMC aumentam também aumenta a despesa. Um fator interessante são os aparentes "saltos" nas despesas entre as idades.</p>
+                    <p>Quanto à variável "Quantidade de Filhos", essa não parece possuir qualquer tipo de relação com Custo Saúde.</p>
+                    <div class="row">
+                        <p><strong>Análise de Correlação</strong> (Variáveis Qualitatívas)</p>
+                        <div class="column">
+                            <a target="_blank" href="imagens\relacao_sexo_saude.png">
+                                <img src="imagens\relacao_sexo_saude.png" alt="Forest" style="width:100%" >
+                        </div>
+                        <div class="column">
+                            <a target="_blank" href="imagens\relacao_fumo_saude.png" alt="Gráfico boxplot da relação entre fumantes e custo com saúde.">
+                                <img src="imagens\relacao_fumo_saude.png" alt="Gráfico boxplot da relação entre fumantes e custo com saúde." style="width:100%" >
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a target="_blank" href="imagens\relacao_regiao_saude.png"  alt="Gráfico boxplot da relação entre região e custo com saúde.">
+                                <img src="imagens\relacao_regiao_saude.png" alt="Gráfico boxplot da relação entre região e custo com saúde." style="width:100%"  >
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a target="_blank" href="imagens\relacao_saude_imc.png" alt="Gráfico boxplot da relação entre imc e custo com saúde.">
+                                <img src="imagens\relacao_saude_imc.png" alt="Gráfico boxplot da relação entre imc e custo com saúde." style="width:100%" height=223>
+                            </a>
+                        </div>    
+                    </div>
+                    <p>Nessa análise, parece que os fatores cruciais para as depesas da empresa se apresentaram: IMC tem sim uma relação significativa com o custo de saúde. À medida que a faixa de obesidade sobre, também sobem as despesas, chegando, a certo ponto quase dobrar.</p>
+                    <p>De acordo com a medida R quadrado, a região explica 4,6% do custo de saúde, ou seja, isoladamente, o impacto pode ser desconsiderado, mas é necessário observar a relação dessa variável com outras, fumantes, por exemplo, como a variável IMC se comportaria junto à fumantes.</p>
+                    <p>Para a variável "fumantes" a amostra apresenta claramente, no gáfico de boxplot, a discrepância entre fumantes e não fumantes. Essa pode ser a variante de maior impacto nas desepesas da empresa por diversos alguns motívos:</p>
+                    <ol>
+                        <li>O custo médio com saúde para fumante é quase 5 vezes maior do que o custo para não fumantes. </li>
+                        <li>A variância de custo para fumantes é muito maior do que para os não fumantes. Isso significa que além de dispenderem de valores maiores, a variação desses valores é grande. Para não fumantes o custo é praticamente o mesmo.</li>
+                        <li>O custo de todos os não fumantes é quase o mesmo para 25% dos fumantes.</li>
+                        <li>A amostra possui  274 funcionários fumantes, o que gerou um custo de 944 mil, frente aos 1064 não fumantes com custos de 782 mil. Ou seja, esses 274 (20%) funcionários fumantes custam 162 mil a mais do que todos os 1064 (80%) não fumantes.</li>
+                        <li>De acordo com o R quadrado, esta variável tem impacto significante nos custos com a saúde. Ser fumante explica 62% do custo de saúde para a empresa.</li>
+                    </ol>     
+                    <p>Como IMC e Fumantes apresentaram os maiores valores para <strong>R²</strong>, o próximo passo foi verificar o resultado da junção das variáveis.</p>
+                    <p>Analisar duas variáveis com um alto valor de R2 é importante por várias razões, entre elas está o poder explicativo: as variáveis independentes juntas conseguem explicar uma grande parte da variação na variável dependente.</p>
+                    <div align="center">
+                        <figure>
+                            <img src="imagens\r_quadrado_fumo_imc.png" alt="R² da junção de fumantes com imc.">
+                            <figcaption><br><small>Fumantes e IMC têm 77% de poder de explicação do Custo com Saúde.</small></figcaption>
+                        </figure>
+                    </div> 
+                    <br>
+                    <p>R² das variáveis qualitativas em ordem decrescente, ou seja, do maior para o menor em poder de explicação da variável de saída.</p>
+                    <div align="center" width="80%">
+                        <figure>
+                            <img src="imagens\escala_r_quadrado.png" alt="níveis de R² para variáveis qualitatívas.">
+                        </figure>
+                    </div>
+                    <br>
+                    <li><strong>Regreção Linear Múltipla</strong></li>
+                    <p>Uma técnica estatística que usa várias variáveis explicativas para prever o resultado de uma variável resposta. O objetivo principal é estabelecer uma relação linear entre as variáveis independentes (variáveis explicativas) e a variável dependente (variável de resposta).</p>
+                    <p>Ao final dessa análise espera-se poder desponder quais são os principais fatores relacionados com o Custo do Plano de Saúde na empresa e tipo de ações preventivas a empresa pode fazer de forma a diminuir esse custo.</p>
+                    <br>
+                    <div align="center">
+                        <figure>
+                            <img src="imagens\regressão_multipla.png" alt="Matriz com a Regressão liear Múltipla">
+                            <figcaption><br><small>Ser fumante aumenta, em média, <strong>R$2.381</strong> o custo de saúde na empresa.</small></figcaption>
+                        </figure>
+                        <br>
+                        <p>Para fazer um <i>double-check</i>, os dados foram submetidos, sem as variáveis "sexo" e "região" (como na análise realizada), a uma plataforma de IA para análises e os mesmo valores finais foram apresentados. </p>
+                        <figure>
+                            <a href="imagens\knime_LR.png">
+                                <img src="imagens\knime_LR_thumb.png" alt="Regressão Linear Múltipla realizada no Knime">
+                            </a>
+                            <figcaption><br><small>KNIME é uma plataforma de construção de relatórios e integração de dados.</small></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <p>A variável <strong>Fumantes</strong> se tornou o fator prioritário no plano de ação, pois ela sozinha tem 75% de poder de explicação sobre os custos com saúde. É necessário, de alguma forma, incentivar os colaboradores fumantes a diminuir esse hábito.</p>
+            </ul>
+        </div>
+        <hr>
+        <div id="validacao">
+            <h3>4. Validação</h3>
+            <p>Foi acordado que o cliente deseja uma ação que traga redução na variável que está causando o aumento nas despesas com saúde. Para isso:</p>
+            <ul>
+                <li>"Fumantes" é a variável de maior influência nas despesas com saúde. O foco de ação do projeto será reduzir a despesa dos <strong>colaboradores fumantes</strong> em <strong>10%</strong>.</li>
+                <li>Framework <strong>5W2H</strong> se adequa perfeitamente às necessidades de aplicação desse projeto, dado que ele se extenderá ao longo de 1 ano.</li>
+                <li>Continuidade da melhoria a longo prazo, desevolvendo uma cultura saudável na empresa com participações em eventos da comunidade local ou mesmo internos.</li>
+            </ul>
+        </div>     
+        <hr>
+        <div id="implementacao">
+            <h3>5. Plano de Implementação</h3> 
+            <p>Para a implementação das ações necessárias utilizaremos o framework <strong>5W2H</strong>, uma ferramenta que permitirá acompanhar o andamento do projeto, controlar o tempo, evitar o desperdício de recursos, delegar a execução das ações.</p> 
+             <div align="center">
+                <figure>
+                    <a href="imagens/5W2H.png" alt="Framework 5W2H" width="100%">
+                        <img src="imagens/5W2H.png" alt="Framework 5W2H" width="80%">
+                    </a>
+                    <figcaption><small>Framework para aplicação das ações necessárias.</small></figcaption>
+                </figure>
+            </div>
+            <br>
+            <p>A implementação ocerrerá de forma gradual, mas será fundamental criar primeiramente grupos de controle, para se ter, ao final do período de estudo, a real dimensão dos resultados obtidos. Na sequência, os objetivos por prioridade seguem da seguinte maneira:</p>
+            <ol>
+                <li>Um programa de consientização de hábitos saudáveis e será realizada chamar a atenção dos colaboradores para um fator tão negligenciado.</li>
+                <li>Uma campanha de concientização sobre os perigos do tabagismo. Palestras e seminários sobre as vantagens de se largar esse hábito nocivo e as vantagens de se cuidar da saúde.</li>
+                <li>Um programa de incentivo ao abandono do tabagismo. Com toda a base para que o colaborador se sinta acolhido e amparado ao decidir parar com o fumo.</li>
+                <li>Em parceria com algumas clinicas podemos ajudar o colaborador que deseja, mas não se sente confiante em superar o desafio sozinho.</li>
+                <li>Devemos ao final do 12 mês realizar uma análise dos resultados das ações realizadas ao longo do período, mas também devemos acompanhar as métricas durante esse período com pesquisas e análises dos dados coletados.</li>
+            </ol>
+            <p>Para nortear a avaliação dos resultados, vamos supor que <strong>"deixar de fumar"</strong> teria impacto relativante para o alcance da meta desejada (redução de 10% nas despesas médicas). Para tal realização, será necessário que 66 funcionários abandonem o tabagismo.</p>
+        </div>          
+        <hr>
+        <div id="dashboard">
+            <h3>Dashboard Power BI</h3>
+            <p>Acesse <a href="https://app.powerbi.com/links/2Cp3BBVVQW?ctid=ea678db6-b6a4-46b3-8b1f-2c06e8ee8e36&pbi_source=linkShare&bookmarkGuid=31213e70-3b22-421c-b05f-7d09780de481">aqui</a> o dashboard para acompanhar a evolução dos resultados das ações aplicadas.</p>
+        </div>
+        <hr> 
+       
+
+        <div id="conclusao">
+            <h3>6. Conclusão</h3> 
+            <p>Esse projeto teve como objetivo sanar uma dor do cliente que estava observando um gasto excessivo com despesas médicas, mas não enxergava qual fator o estava causando.</p>
+            <p>Com os dados fornecidos pela Diretoria de Pessoal através do Departamento Médico, pode ser desenvolvido  análises de associação como <strong>Correlação de <i>Pearson</i></strong>, <strong>R-quadrado</strong> e <strong>Regressão Linear Múltipla</strong> que nos levaram a encontrar o foco do problema.</p>
+            <p>Encontrado o motivo da despesa, um plano de ação foi apresentado com ferramentas que permitem o acompanhamento da evolução dos resultados.</p>
+        </div>    
+        <hr>
+        <div id="proximospassos">
+            <h3>7. Próximos Passos</h3>
+            <p>A aplicação das ações necessárias é prática e objetiva. Para que não venha a sofre desse problema no futuro, basta acompanhar as metricas em períodos de tempo para que em questão de tempo, se as ações forem bem aplicadas, a saúde se tornará uma questão cultural na empresa. Assim elém de evitar despesas desnecessárias, a empresa, com certeza, aumentará sua margem com o aumento da produtividade por funcionários mais saudáveis. </p>
+        </div>
+    </div>
+    <hr>
+    <div id="anexos">
+        <h3>Anexos</h3>
+        <p>Acesso <a href="">aqui</a> o arquivo <strong>PDF</strong> com todos os gráficos da AED e da Análise de Correlação.</p>
+    </div>
+    <hr>
+    <div id="referencias">
+        <h3>8. Referências</h3>
+        <ul>
+            <li><a href="https://www.preditiva.ai/blog/como-realizar-a-extracao-e-preparacao-de-dados-em-projetos">Preditiva.ai - Como realizar a extração e preparação de dados em projetos?</a></li>
+            <li><a href="https://www.paho.org/pt/topicos/tabaco">Tabagismo - Organização Panamericana da Saúde</a></li>
+            <li><a href="https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/programa-nacional-de-controle-do-tabagismo">Programa Nacional de Controle do Tabagismo</a></li>
+            <li><a href="https://chat.openai.com/auth/login">ChatGPT</a></li>
+        </ul>
+    </div>
+    <br>
+</div>
+   
+</body>
+</html> 
